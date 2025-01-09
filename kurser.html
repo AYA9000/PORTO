@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurser</title>
+    <link rel = "CV" href="style.css">
+
+    <style>
+         body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            background-color: black;
+        }
+        nav {
+            margin: 20px;
+            position: absolute; 
+            top: 20px;
+            left: 20px;  
+        }
+        .button {
+            background-color: black;
+            color: white; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+     
+        .container {
+            max-width: 600px; 
+            margin: 20px auto;
+        }
+        .course {
+            background: white;
+            border: 2px solid red; /* Röd kant */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 0; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+        }
+        .course h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .course p {
+            font-size: 1em;
+            color: #555;
+            display: none; 
+        }
+        .course.active {
+            z-index: 1; 
+        }
+        .course.active p {
+            display: block; 
+        }
+
+    </style>
+</head>
+    </style>
+</head>
+<body>
+    <a href="index.html" class="button">Till Startsidan</a>
+    <div class="container">
+     
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 1: Programmering 1 </h2>
+            <p>Denna kurs ger en introduktion till programmering med C#. Du lär dig grunderna i syntax, datatyper och kontrollstrukturer.</p>
+       <a href="https://www.skolverket.se/skolutveckling/kurser-och-utbildningar/om-programmering---webbkurs">Läs mer</a>
+        </div>
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 2: Webbutveckling</h2>
+            <p>Denna kurs fokuserar på att bygga webbplatser med HTML, CSS och JavaScript. Du lär dig skapa responsiva och interaktiva webbsidor.</p>
+       <a href="https://www.skolverket.se/undervisning/vuxenutbildningen/komvux-gymnasial/laroplan-for-vux-och-amnesplaner-for-komvux-gymnasial/amne?url=907561864%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DWEU%26tos%3Dvuxgy&sv.url=12.b173ee8160557dd0b8100d">Läs mer</a>
+        </div>
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 3: Företagsekonomi </h2>
+            <p>Denna kur lär ut grundläggande ekonomiska principer,bokföring och finansiell analys, samt hur man planerar och budgeterar för ett företags verksamhet. Kursen omfattar också marknadsföring, kostnadsanalys och riskhantering, vilket ger en helhetsförståelse för att driva och utveckla ett framgångsrikt företag. </p>
+        <a href="https://www.skolverket.se/undervisning/vuxenutbildningen/komvux-gymnasial/laroplan-for-vux-och-amnesplaner-for-komvux-gymnasial/amne?url=907561864%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DF%25C3%2596R%26tos%3Dvuxgy&sv.url=12.b173ee8160557dd0b8100d">Läs mer</a>
+        </div>
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 5: Tillämpad programmering </h2>
+            <p>Denna kurs lär ut praktiska programmeringsfärdigheter för att lösa verkliga problem.</p>
+        <a href="https://www.skolverket.se/undervisning/vuxenutbildningen/komvux-gymnasial/laroplan-for-vux-och-amnesplaner-for-komvux-gymnasial/amne?url=907561864%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DTIA%26tos%3Dvuxgy&sv.url=12.b173ee8160557dd0b8100d">Läs mer</a>
+        </div>
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 6:Webbserverprogrammering  </h2>
+            <p>Denna kurs handlar om att bygga och hantera webbservrar samt webbutveckling.</p>
+<a href="https://www.skolverket.se/undervisning/vuxenutbildningen/komvux-gymnasial/laroplan-for-vux-och-amnesplaner-for-komvux-gymnasial/amne?url=907561864%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DWES%26tos%3Dvuxgy&sv.url=12.b173ee8160557dd0b8100d">Läs mer</a>
+        </div>
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 7 :Teknik specialisering </h2>
+            <p>I kursen  man lär sig avancerade tekniska koncept, praktiska färdigheter, projektledning, samarbete, systemanalys och innovationsförmåga, vilket förbereder dem för en framgångsrik karriär inom teknikområdet.</p>
+        <a href="https://www.skolverket.se/undervisning/vuxenutbildningen/komvux-gymnasial/laroplan-for-vux-och-amnesplaner-for-komvux-gymnasial/amne?url=907561864%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DTEK%26tos%3Dvuxgy&sv.url=12.b173ee8160557dd0b8100d">Läs mer</a>
+        </div>
+        <div class="course" onclick="toggleCourse(this)">
+            <h2>Kurs 8:Företagsekonomi specialisering  </h2>
+            <p>I kursen Företagsekonomi specialisering man lär sig att analysera och förstå ekonomiska principer, strategisk planering, finansiell analys och företagsstyrning, vilket ger dem verktyg för att fatta informerade affärsbeslut. </p>
+       <a href="https://www.skolverket.se/undervisning/vuxenutbildningen/komvux-gymnasial/laroplan-for-vux-och-amnesplaner-for-komvux-gymnasial/amne?url=907561864%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DF%25C3%2596R%26tos%3Dvuxgy&sv.url=12.b173ee8160557dd0b8100d">Läs mer</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleCourse(course) {
+         
+            const courses = document.querySelectorAll('.course');
+            courses.forEach(c => {
+                if (c !== course) {
+                    c.classList.remove('active');
+                }
+            });
+        
+            course.classList.toggle('active');
+        }
+        
+    </script>
+
+    
+</body>
+</html>

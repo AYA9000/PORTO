@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intresse</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            background-color: black; /* Svart bakgrund */
+            color: white; /* Vit textfärg */
+        }
+        nav {
+            margin: 20px;
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+        }
+        .button {
+            background-color: black;
+            color: white; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background: white; 
+            border: 2px solid red; 
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 10px; /* Minskat padding */
+            width: 200px; /* Minskat bredd */
+            transition: transform 0.2s;
+            color: black; 
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h4 {
+            margin: 5px 0;
+            font-weight: normal; 
+        }
+        .card img {
+            width: 100%; 
+            border-radius: 8px 8px 0 0; 
+        }
+    </style>
+</head>
+<body>
+
+<a href="index.html" class="button">Till Startsidan</a>
+
+<h1>Mina Intressen</h1>
+<div class="container">
+    <div class="card">
+        <img src="innebandy.jpg" alt="" />
+        <h4>Innebandy</h4>
+    </div>
+    <div class="card">
+        <img src="gokart.jpg" alt="" />
+        <h4>Gokart</h4>
+    </div>
+    <div class="card">
+        <img src="coding.jpg" alt="" />
+        <h4>Coding</h4>
+    </div>
+    <div class="card">
+        <img src="skidor.jpg" alt="" />
+        <h4>Skidor</h4> 
+    </div>
+    <div class="card">
+        <img src="resa.jpg" alt="" />
+        <h4> Resa</h4>
+    </div>
+    <div class="card">
+        <img src="mat.jpg" alt="" /> 
+        <h4>Laga mat</h4> 
+    </div>
+</div>
+
+</body>
+</html>
